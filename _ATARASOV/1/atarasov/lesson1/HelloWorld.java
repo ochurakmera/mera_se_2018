@@ -2,9 +2,11 @@ package atarasov.lesson1;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        int i = 2_222_222_22;
-        short d = (short)i;
-        System.out.println(d);
+        Man petya = new Man("Petya", 42);
+        Man vasya = new Man("Vasya", 17);
+
+        System.out.println("Петя:" +petya.isAdult());
+        System.out.println("Вася:" + vasya.isAdult());
     }
 
     public static class Man {
