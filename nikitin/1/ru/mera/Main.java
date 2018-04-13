@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         //1
         for(int i = args.length; i>=0; i--) {
-            System.out.print(args[i] + (i>0 ? ", " : '\n'));
+            System.out.print(args[i] + (i>0 ? " " : '\n'));
         }
         //2
         ArrayList<String> strings = new ArrayList(Arrays.asList(args));
