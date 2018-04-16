@@ -2,15 +2,11 @@ package atarasov;
 
 public class lesson2_2 {
 
-    // тернарная операция
     public static void main(String[] args) {
-     /*   if (true) {
-            return "Привет!";
-        } else {
-            return "Пока";
-        }*/
-
-        System.out.println( true ? false?"asd":"asd" : "Пока");
+        // &&, || - короткий цикл вычислений
+        // &,| - всегда вычисляет аргументы
+        System.out.println( getFalse() && getTrue());
+        System.out.println(getTrue() | getFalse());
     }
 
     private static boolean getTrue() {
