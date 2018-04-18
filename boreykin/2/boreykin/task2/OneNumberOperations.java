@@ -20,6 +20,7 @@ public class OneNumberOperations
     {
         Integer l_number;
         long sum = 0;
+        String oddNumbers = "";
 
         if (args.length != 1) 
         {
@@ -36,7 +37,7 @@ public class OneNumberOperations
             System.out.println("Error in number conversion: " + e);
             return;
         }
-
+       
         for (int counter = 0; counter <= l_number; ++counter) 
         {
             if (isEven(counter)) 
@@ -45,19 +46,15 @@ public class OneNumberOperations
             } 
             else 
             {
-                if (counter == 1) 
-                {
-                    System.out.print("Odd numbers:");
-                }
-                
-                System.out.print(" " + counter);
-                
-                if(counter >= l_number - 1)
-                {
-                    System.out.println();
-                }
+                oddNumbers += " " + counter;
             }
         }
+        
+        if(l_number >= 1)
+        {
+            // At least 1 odd number is to be displayed
+            System.out.println("Odd numbers: " + oddNumbers);
+        }        
         
         System.out.println("Sum of even numbers: " + sum);
     }
