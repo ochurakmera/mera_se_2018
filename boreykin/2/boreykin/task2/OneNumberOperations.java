@@ -54,7 +54,7 @@ public class OneNumberOperations
         {
             // At least 1 odd number is to be displayed
             System.out.println("Odd numbers: " + oddNumbers);
-        }        
+        }
         
         System.out.println("Sum of even numbers: " + sum);
     }
