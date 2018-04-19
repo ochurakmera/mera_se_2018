@@ -4,9 +4,11 @@ public class HelloWorld {
     public static void main(String[] args) {
         Man petya = new Man("Petya", 42);
         Man vasya = new Man("Vasya", 17);
+        Man andrey = new Man("Andrey", 17);
 
         System.out.println("Петя:" +petya.isAdult());
         System.out.println("Вася:" + vasya.isAdult());
+        System.out.println("Андрей:" + andrey.isAdult());
     }
 
     public static class Man {
