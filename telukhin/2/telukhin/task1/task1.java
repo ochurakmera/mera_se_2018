@@ -1,4 +1,4 @@
-package telukhin.task2.1;
+package telukhin.task1;
 
 public class task1 {
 

@@ -1,4 +1,4 @@
-package telukhin.task2.3;
+package telukhin.task3;
 
 public class task3 {
     public static int[] array = {-4, -2, -1, -3, 8000, -8, -7, 0, -9};

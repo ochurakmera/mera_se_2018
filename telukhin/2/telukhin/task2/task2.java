@@ -1,4 +1,4 @@
-package telukhin.task2.2;
+package telukhin.task2;
 
 import java.util.Scanner;
 
