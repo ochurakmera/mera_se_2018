@@ -16,7 +16,7 @@ public class Book {
         this.date  = date;
         this.autor = autor;
         this.pages = pages;
-        this.totalPages+=pages;
+        totalPages+=pages;
     }
 
     public void printBookInfo() {
@@ -38,5 +38,7 @@ public class Book {
         System.out.println("Total pages: " + totalPages);
     }
 
-
+    public static void delete(Book book) {
+        totalPages -= book.pages;
+    }
 }

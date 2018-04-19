@@ -14,8 +14,11 @@ public class Main {
         gogol.writeBook("Dead Souls I", 121);
         gogol.writeBook("Dead Souls II", 422);
         gogol.printBooks();
+        Book.printTotalPages();
         gogol.burnBook("Dead Souls II");
         gogol.printBooks();
+        Book.printTotalPages();
+
 
         Autor pushkin = new Autor("Alex", "Push", new Date(), "Russia");
         pushkin.writeBook("Evgen Onegin ", 345);

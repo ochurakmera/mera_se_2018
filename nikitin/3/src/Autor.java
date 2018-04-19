@@ -21,13 +21,9 @@ public class Autor extends Person {
         System.out.println("\t\tTotal pages: " + this.totalPages);
     }
 
+    @Override
     public void printBio() {
         super.printBio();
-    }
-
-    void writeBook(String title, int pages) {
-        this.books.add(new Book(title, new Date(), this, pages));
-        this.totalPages+=pages;
     }
 
     private Book getBook(String title){
@@ -39,12 +35,17 @@ public class Autor extends Person {
         return null;
     }
 
+    void writeBook(String title, int pages) {
+        this.books.add(new Book(title, new Date(), this, pages));
+        this.totalPages+=pages;
+    }
+
     void burnBook(String title) {
         Book book = getBook(title);
         if (book != null) {
             this.books.remove(book);
+            Book.delete(book);
             System.out.println(String.format("The \"%s\" became ashes", title));
         }
     }
-
 }
