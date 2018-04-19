@@ -9,6 +9,7 @@ public class HelloWorld {
         System.out.println("Петя:" +petya.isAdult());
         System.out.println("Вася:" + vasya.isAdult());
         System.out.println("Андрей:" + andrey.isAdult());
+        System.out.println("Андрей:" + andrey.age);
     }
 
     public static class Man {
